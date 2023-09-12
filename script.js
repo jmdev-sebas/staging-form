@@ -1,5 +1,9 @@
-// script.js
+const toggleDarkModeBtn = document.getElementById("toggleDarkMode");
+const body = document.querySelector('body');
+const inputContainers = document.querySelectorAll('.input-container');
 const inputFields = document.querySelectorAll('.input-field');
+const inputLabels = document.querySelectorAll('.input-label');
+
 
 inputFields.forEach((inputField) => {
     const inputLabel = inputField.nextElementSibling;
@@ -27,3 +31,20 @@ inputFields.forEach((inputField) => {
         inputLabel.classList.add('label-up');
     }
 });
+
+// Toggle dark mode
+toggleDarkModeBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    
+    inputContainers.forEach((inputContainer) => {
+      inputContainer.classList.toggle("dark-mode");
+    });
+  
+    inputFields.forEach((inputField) => {
+      inputField.classList.toggle("dark-mode");
+    });
+  
+    inputLabels.forEach((inputLabel) => {
+      inputLabel.classList.toggle("dark-mode");
+    });
+  });
