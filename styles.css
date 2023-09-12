@@ -1,0 +1,61 @@
+.form-container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    font-size: 18px;
+  }
+  
+  .border-focus {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.64, 0.09, 0.08, 1);
+  }
+  
+  .form-label {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 18px;
+    color: #999;
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    pointer-events: none;
+  }
+  
+  .form-control:focus,
+  .form-control:valid {
+    border: 2px solid transparent;
+  }
+  
+  .form-control:focus + .form-label,
+  .form-control:valid + .form-label {
+    top: -10px;
+    left: 10px;
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  .form-control:focus ~ .border-focus,
+  .form-control:valid ~ .border-focus {
+    border: 2px solid #007bff;
+  }
+  
