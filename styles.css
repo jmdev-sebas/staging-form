@@ -74,6 +74,64 @@
   -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+/* Existing CSS */
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: #FFF;
+  }
+  
+  .input-container.dark-mode {
+    color: #FFF;
+  }
+  
+  .input-label.dark-mode {
+    color: #FFF;
+    background-color: #222;
+  }
+  
+  .input-field.dark-mode {
+    color: #FFF;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .input-field.dark-mode:focus {
+    border-color: #ddd;
+  }
+  
+  .input-field.dark-mode:focus + .input-label {
+    color: #ddd;
+  }
+  
+/* Toggle button styles */
+.toggle-button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .toggle-button i {
+    margin-right: 8px;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0058a3;
+  }
+  
+  /* Dark mode button */
+  .toggle-button.dark-mode {
+    background-color: #222;
+    color: #FFF;
+  }
+  
+  .toggle-button.dark-mode i {
+    color: #FFF;
+  }
 /* Override the default autofill text color */
 .input-field:-webkit-autofill::first-line {
   color: black;

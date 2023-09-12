@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Animated Form Placeholder</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Animated Form Placeholder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div class="toggle-container">
+        <button id="toggleDarkMode" class="toggle-button">
+          <i id="darkModeIcon" class="fas fa-moon"></i> Toggle Mode
+        </button>
+
   <div class="form-container">
     <div class="input-container">
         <input type="text" id="username" class="input-field">
@@ -14,13 +23,14 @@
     <div class="input-container">
       <input type="email" id="email" class="input-field">
       <label for="email" class="input-label">Email Address</label>
+        </div>
+        <div class="input-container">
+            <input type="password" id="password" class="input-field">
+            <label for="password" class="input-label">Password</label>
+        </div>
     </div>
-    <div class="input-container">
-      <input type="password" id="password" class="input-field">
-      <label for="password" class="input-label">Password</label>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
